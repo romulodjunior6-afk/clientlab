@@ -1,17 +1,12 @@
-# ClientLab – Projeto Prático Parte 1
+# ClientLab - Projeto Prático Parte 1
 
-Sistema de cadastro de clientes em C# (.NET 8) com classes base de **Pessoa Física** e **Pessoa Jurídica**.
+Atividade do curso de codificação back-end. Sistema de cadastro de clientes em C#.
 
-## Estrutura
-- `Pessoa.cs` – classe abstrata base (propriedade `Nome`)
-- `PessoaFisica.cs` – `CPF`, `DataNascimento`; valida idade mínima de 18 anos
-- `PessoaJuridica.cs` – `CNPJ`, `RazaoSocial`; valida 14 dígitos e sufixo `0001`
-- `Program.cs` – demonstração com casos válidos e inválidos
+## Arquivos
+- Pessoa.cs - classe base com o Nome
+- PessoaFisica.cs - CPF e data de nascimento, valida se tem 18 anos ou mais
+- PessoaJuridica.cs - CNPJ e razão social, valida se tem 14 dígitos e 0001 antes dos verificadores
+- Program.cs - testa o cadastro com exemplos certos e errados
 
-## Como executar
-```bash
+## Rodar
 dotnet run
-```
-
-## Depuração no VS Code
-Abra a pasta, coloque breakpoints em `PessoaFisica.cs` / `PessoaJuridica.cs` e pressione F5 (extensão C# Dev Kit).
